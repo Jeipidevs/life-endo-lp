@@ -11,12 +11,16 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           
-          {/* Marca & Logo Oficial Transparente */}
+          {/* Marca & Logo Oficial Transparente WebP */}
           <div className="space-y-4">
-            <a href="#" className="flex items-center">
+            <a href="#clinica" className="flex items-center" aria-label="Voltar ao início da página Life Endo Clínica">
               <img
-                src="/logo-life-endo-transparent.png"
-                alt="Life Endo Clínica"
+                src="/logo-life-endo-transparent.webp"
+                alt="Life Endo Clínica - Gastroenterologia e Endoscopia"
+                width={200}
+                height={52}
+                loading="lazy"
+                decoding="async"
                 className="h-12 sm:h-14 w-auto object-contain"
               />
             </a>
@@ -26,44 +30,44 @@ export const Footer = () => {
             </p>
 
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-zinc-200 text-[#0B2C4D] text-[11px] font-semibold shadow-2xs">
-              <ShieldCheck className="w-4 h-4 text-[#0B2C4D]" />
+              <ShieldCheck className="w-4 h-4 text-[#0B2C4D]" aria-hidden="true" />
               <span>Acreditação de Segurança Hospitalar</span>
             </div>
           </div>
 
           {/* Links de Navegação */}
           <div className="space-y-3">
-            <h4 className="font-bold text-sm text-zinc-900 uppercase tracking-wider font-sans border-b border-zinc-200 pb-2">
+            <h2 className="font-bold text-sm text-zinc-900 uppercase tracking-wider font-sans border-b border-zinc-200 pb-2">
               Navegação
-            </h4>
+            </h2>
             <ul className="space-y-2 text-zinc-600 font-light">
               <li>
-                <a href="#clinica" className="hover:text-[#0B2C4D] transition-colors">
+                <a href="#clinica" className="hover:text-[#0B2C4D] transition-colors py-1 inline-block">
                   A Clínica & Estrutura
                 </a>
               </li>
               <li>
-                <a href="#especialidades" className="hover:text-[#0B2C4D] transition-colors">
+                <a href="#especialidades" className="hover:text-[#0B2C4D] transition-colors py-1 inline-block">
                   Exames & Especialidades
                 </a>
               </li>
               <li>
-                <a href="#tecnologia" className="hover:text-[#0B2C4D] transition-colors">
+                <a href="#tecnologia" className="hover:text-[#0B2C4D] transition-colors py-1 inline-block">
                   Tecnologia & Sedação
                 </a>
               </li>
               <li>
-                <a href="#medicos" className="hover:text-[#0B2C4D] transition-colors">
+                <a href="#medicos" className="hover:text-[#0B2C4D] transition-colors py-1 inline-block">
                   Corpo Clínico (CRM/RQE)
                 </a>
               </li>
               <li>
-                <a href="#preparo" className="hover:text-[#0B2C4D] transition-colors">
+                <a href="#preparo" className="hover:text-[#0B2C4D] transition-colors py-1 inline-block">
                   Preparo & Reembolso (IP)
                 </a>
               </li>
               <li>
-                <a href="#faq" className="hover:text-[#0B2C4D] transition-colors">
+                <a href="#faq" className="hover:text-[#0B2C4D] transition-colors py-1 inline-block">
                   Perguntas Frequentes
                 </a>
               </li>
@@ -72,9 +76,9 @@ export const Footer = () => {
 
           {/* Exames Realizados */}
           <div className="space-y-3">
-            <h4 className="font-bold text-sm text-zinc-900 uppercase tracking-wider font-sans border-b border-zinc-200 pb-2">
+            <h2 className="font-bold text-sm text-zinc-900 uppercase tracking-wider font-sans border-b border-zinc-200 pb-2">
               Exames Principais
-            </h4>
+            </h2>
             <ul className="space-y-2 text-zinc-600 font-light">
               <li>Endoscopia Digestiva Alta</li>
               <li>Colonoscopia & Polipectomia</li>
@@ -87,13 +91,13 @@ export const Footer = () => {
 
           {/* Endereço & CFM Normas */}
           <div className="space-y-3">
-            <h4 className="font-bold text-sm text-zinc-900 uppercase tracking-wider font-sans border-b border-zinc-200 pb-2">
+            <h2 className="font-bold text-sm text-zinc-900 uppercase tracking-wider font-sans border-b border-zinc-200 pb-2">
               Localização & Contato
-            </h4>
+            </h2>
             
             <div className="space-y-2 text-zinc-600 font-light">
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-[#0B2C4D] shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#0B2C4D] shrink-0 mt-0.5" aria-hidden="true" />
                 <span>
                   Hospital Life Plus - 2º Andar, Sala 209<br />
                   Rua Elias João de Medeiros, nº 2001<br />
@@ -102,12 +106,12 @@ export const Footer = () => {
               </div>
 
               <div className="flex items-center gap-2 pt-1">
-                <Phone className="w-4 h-4 text-[#0B2C4D] shrink-0" />
+                <Phone className="w-4 h-4 text-[#0B2C4D] shrink-0" aria-hidden="true" />
                 <span>WhatsApp: (51) 99487-4760</span>
               </div>
 
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-[#0B2C4D] shrink-0" />
+                <Mail className="w-4 h-4 text-[#0B2C4D] shrink-0" aria-hidden="true" />
                 <span>atendimento@lifeendoclinica.com.br</span>
               </div>
             </div>

@@ -22,7 +22,7 @@ export const Hero = () => {
           >
             {/* Pill Tag Institucional */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-100/90 border border-zinc-200 text-zinc-800 text-xs font-semibold">
-              <Building2 className="w-4 h-4 text-[#0B2C4D]" />
+              <Building2 className="w-4 h-4 text-[#0B2C4D]" aria-hidden="true" />
               <span>Complexo Hospitalar Life Plus &bull; Xangri-lá / RS</span>
             </div>
 
@@ -42,11 +42,11 @@ export const Hero = () => {
             {/* Micro badges clean */}
             <div className="flex flex-wrap items-center gap-3 text-xs text-zinc-600 py-1">
               <div className="flex items-center gap-2 bg-zinc-50 border border-zinc-200 px-4 py-1.5 rounded-full">
-                <Check className="w-4 h-4 text-[#0B2C4D]" />
+                <Check className="w-4 h-4 text-[#0B2C4D]" aria-hidden="true" />
                 <span className="font-medium">Exames 100% Humanizados</span>
               </div>
               <div className="flex items-center gap-2 bg-zinc-50 border border-zinc-200 px-4 py-1.5 rounded-full">
-                <ShieldCheck className="w-4 h-4 text-[#0B2C4D]" />
+                <ShieldCheck className="w-4 h-4 text-[#0B2C4D]" aria-hidden="true" />
                 <span className="font-medium">Segurança Hospitalar Integrada</span>
               </div>
             </div>
@@ -58,17 +58,19 @@ export const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="biofarma-btn-dot"
+                aria-label="Falar com Atendimento e Agendar Exame no WhatsApp"
               >
                 <span className="btn-text">Falar com Atendimento / Agendar Exame</span>
-                <span className="btn-dot" />
+                <span className="btn-dot" aria-hidden="true" />
               </a>
 
               <a
                 href="#especialidades"
                 className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-xs font-semibold uppercase tracking-wider text-zinc-700 hover:text-zinc-900 bg-zinc-100 hover:bg-zinc-200/80 transition-colors"
+                aria-label="Conhecer Especialidades e Exames"
               >
                 <span>Conhecer Especialidades</span>
-                <ArrowUpRight className="w-4 h-4" />
+                <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
               </a>
             </div>
 
@@ -88,7 +90,7 @@ export const Hero = () => {
               <div>
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" aria-hidden="true" />
                   ))}
                   <span className="font-bold text-zinc-900 text-sm ml-1">5.0 / 5.0</span>
                 </div>
@@ -100,7 +102,7 @@ export const Hero = () => {
 
           </motion.div>
 
-          {/* Coluna Direita: Container Biofarma Rounded com Foto da Clínica */}
+          {/* Coluna Direita: Imagem LCP Otimizada em WebP com Dimensions e Priority */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -112,11 +114,16 @@ export const Hero = () => {
               {/* Rounded Frame Biofarma Style: rounded-[2.618rem] */}
               <div className="rounded-[2.618rem] bg-zinc-50 border border-zinc-200/90 p-3.5 shadow-xl relative overflow-hidden group">
                 
-                {/* Imagem Real da Estrutura Médica / Centro Cirúrgico */}
+                {/* Imagem LCP Otimizada WebP */}
                 <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] bg-zinc-200">
                   <img
-                    src="/hero-clinic.png"
-                    alt="Centro de Diagnóstico Life Endo Clínica"
+                    src="/hero-clinic.webp"
+                    alt="Centro de Diagnóstico e Endoscopia Avançada na Life Endo Clínica"
+                    width={600}
+                    height={450}
+                    // @ts-ignore
+                    fetchpriority="high"
+                    decoding="sync"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
@@ -140,7 +147,7 @@ export const Hero = () => {
                         IZ
                       </div>
                       <div>
-                        <h4 className="font-bold text-xs text-zinc-900">Dr. Idílio Zamin Júnior</h4>
+                        <h2 className="font-bold text-xs text-zinc-900">Dr. Idílio Zamin Júnior</h2>
                         <p className="text-[11px] text-zinc-500 font-light">CRM 19.623 &bull; Mestre e Doutor UFRGS</p>
                       </div>
                     </div>
@@ -155,7 +162,7 @@ export const Hero = () => {
                         JS
                       </div>
                       <div>
-                        <h4 className="font-bold text-xs text-zinc-900">Dr. José Antônio Saad</h4>
+                        <h2 className="font-bold text-xs text-zinc-900">Dr. José Antônio Saad</h2>
                         <p className="text-[11px] text-zinc-500 font-light">CRM 16.043 &bull; 36 Anos de Medicina</p>
                       </div>
                     </div>
