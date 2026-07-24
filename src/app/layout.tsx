@@ -43,10 +43,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${interTight.variable} scroll-smooth`}>
+    <html lang="pt-BR" className={`${interTight.variable} scroll-smooth overflow-x-hidden w-full max-w-full`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           rel="preload"
           href="/hero-clinic-mobile.webp"
@@ -62,7 +60,7 @@ export default function RootLayout({
           media="(min-width: 641px)"
         />
       </head>
-      <body className="bg-white font-sans text-zinc-950 antialiased selection:bg-[#0B2C4D] selection:text-white">
+      <body className="bg-white font-sans text-zinc-950 antialiased selection:bg-[#0B2C4D] selection:text-white overflow-x-hidden w-full max-w-full">
         {children}
       </body>
     </html>
