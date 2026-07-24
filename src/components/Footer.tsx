@@ -83,7 +83,6 @@ export const Footer = () => {
               <li>Endoscopia Digestiva Alta</li>
               <li>Colonoscopia & Polipectomia</li>
               <li>Enteroscopia por Cápsula (PillCam)</li>
-              <li>Gastroenterologia Clínica</li>
               <li>Balão Intragástrico Endoscópico</li>
               <li>CPRE & Gastrostomia (GEP)</li>
             </ul>
