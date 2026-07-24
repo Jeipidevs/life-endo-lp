@@ -65,8 +65,8 @@ export const Header = () => {
             <img
               src="/logo-life-endo-transparent.webp"
               alt="Life Endo Clínica - Gastroenterologia e Endoscopia"
-              width={200}
-              height={52}
+              width={140}
+              height={77}
               decoding="async"
               className="h-11 sm:h-13 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
             />

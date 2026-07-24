@@ -17,8 +17,8 @@ export const Footer = () => {
               <img
                 src="/logo-life-endo-transparent.webp"
                 alt="Life Endo Clínica - Gastroenterologia e Endoscopia"
-                width={189}
-                height={104}
+                width={140}
+                height={77}
                 loading="lazy"
                 decoding="async"
                 className="h-12 sm:h-14 w-auto object-contain"

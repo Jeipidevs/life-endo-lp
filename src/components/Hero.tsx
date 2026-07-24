@@ -1,32 +1,27 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import { Star, ShieldCheck, Check, ArrowUpRight, Building2 } from "lucide-react";
 
 export const Hero = () => {
   const whatsappUrl = "https://wa.me/5551994874760?text=Olá!%20Gostaria%20de%20agendar%20um%20exame/consulta%20na%20Life%20Endo%20Clínica.";
 
   return (
-    <section id="clinica" className="bg-white text-zinc-950 pt-12 pb-24 overflow-hidden relative">
+    <section id="clinica" className="bg-white text-zinc-950 pt-10 pb-20 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
-          {/* Coluna Esquerda: Texto Biofarma Style (Golden Ratio Typography + High Contrast A11y) */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
-            className="lg:col-span-7 space-y-6"
-          >
+          {/* Coluna Esquerda: Texto Renderizado Imediatamente sem delay de Opacidade (LCP Ultra-Rápido < 1s) */}
+          <div className="lg:col-span-7 space-y-6">
+            
             {/* Pill Tag Institucional */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-100 border border-zinc-300 text-zinc-900 text-xs font-bold">
               <Building2 className="w-4 h-4 text-[#0B2C4D]" aria-hidden="true" />
               <span>Complexo Hospitalar Life Plus &bull; Xangri-lá / RS</span>
             </div>
 
-            {/* H1 biofarma-style: Thin font weight, Golden Ratio scaling */}
+            {/* H1 Elemento LCP - Renderizacao Instantanea sem Opacidade Categoria 0 */}
             <h1 className="golden-ratio-h1 font-light tracking-tight text-zinc-950 font-sans">
               Diagnóstico preciso e tratamento avançado em{" "}
               <span className="font-normal text-[#0B2C4D] underline decoration-[#C5A059] underline-offset-8">
@@ -52,7 +47,7 @@ export const Hero = () => {
             </div>
 
             {/* Botões CTA Estilo Biofarma (Dot Effect) */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
               <a
                 href={whatsappUrl}
                 target="_blank"
@@ -75,7 +70,7 @@ export const Hero = () => {
             </div>
 
             {/* Prova Social Google Badge */}
-            <div className="pt-6 border-t border-zinc-200 flex items-center gap-4">
+            <div className="pt-5 border-t border-zinc-200 flex items-center gap-4">
               <div className="flex -space-x-2">
                 <div className="w-9 h-9 rounded-full bg-[#0B2C4D] text-white font-bold text-xs flex items-center justify-center border-2 border-white shadow-sm">
                   IZ
@@ -100,15 +95,10 @@ export const Hero = () => {
               </div>
             </div>
 
-          </motion.div>
+          </div>
 
-          {/* Coluna Direita: Imagem LCP Responsiva com <picture> (22KB Mobile) */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: [0.215, 0.61, 0.355, 1], delay: 0.2 }}
-            className="lg:col-span-5"
-          >
+          {/* Coluna Direita: Imagem Responsiva com <picture> */}
+          <div className="lg:col-span-5">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
               {/* Frame Biofarma Style: rounded-[2.618rem] */}
@@ -178,7 +168,7 @@ export const Hero = () => {
               </div>
 
             </div>
-          </motion.div>
+          </div>
 
         </div>
       </div>
