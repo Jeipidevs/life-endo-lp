@@ -101,11 +101,11 @@ export const Hero = () => {
                   </picture>
                 </div>
 
-                {/* Cards Médicos Fundadores com Alinhamento Perfeito em Telas Mobile */}
+                {/* Cards Médicos Fundadores com Alinhamento 100% Simétrico sem Quebra de Linha */}
                 <div className="mt-3.5 space-y-2">
                   
-                  <div className="bg-white p-3 sm:p-3.5 rounded-2xl border border-zinc-200 flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 shadow-2xs">
-                    <div className="flex items-center gap-3 min-w-0">
+                  <div className="bg-white p-3 rounded-2xl border border-zinc-200 flex items-center justify-between gap-2 shadow-2xs">
+                    <div className="flex items-center gap-2.5 min-w-0">
                       <div className="w-10 h-10 rounded-xl overflow-hidden shadow-xs border border-zinc-200 shrink-0 bg-zinc-100">
                         <img
                           src="/dr-idilio-zamin.webp"
@@ -116,17 +116,17 @@ export const Hero = () => {
                         />
                       </div>
                       <div className="min-w-0">
-                        <h2 className="font-bold text-xs text-zinc-950 truncate">Dr. Idílio Zamin Júnior</h2>
-                        <p className="text-[11px] text-zinc-800 font-medium truncate">CRM 19.623 &bull; Mestre e Doutor UFRGS</p>
+                        <h2 className="font-bold text-[11.5px] text-zinc-950 truncate">Dr. Idílio Zamin Júnior</h2>
+                        <p className="text-[10.5px] text-zinc-800 font-medium truncate">CRM 19.623 &bull; Mestre e Doutor UFRGS</p>
                       </div>
                     </div>
-                    <span className="text-[10px] font-extrabold uppercase bg-amber-100 text-amber-950 border border-amber-300 px-2.5 py-1 rounded-full shrink-0 ml-auto sm:ml-0 whitespace-nowrap">
+                    <span className="text-[9px] font-extrabold uppercase bg-amber-100 text-amber-950 border border-amber-300 px-2 py-0.5 rounded-full shrink-0 whitespace-nowrap">
                       SOBED & SBG
                     </span>
                   </div>
 
-                  <div className="bg-white p-3 sm:p-3.5 rounded-2xl border border-zinc-200 flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 shadow-2xs">
-                    <div className="flex items-center gap-3 min-w-0">
+                  <div className="bg-white p-3 rounded-2xl border border-zinc-200 flex items-center justify-between gap-2 shadow-2xs">
+                    <div className="flex items-center gap-2.5 min-w-0">
                       <div className="w-10 h-10 rounded-xl overflow-hidden shadow-xs border border-zinc-200 shrink-0 bg-zinc-100">
                         <img
                           src="/dr-jose-antonio.webp"
@@ -137,11 +137,11 @@ export const Hero = () => {
                         />
                       </div>
                       <div className="min-w-0">
-                        <h2 className="font-bold text-xs text-zinc-950 truncate">Dr. José Antônio Saad</h2>
-                        <p className="text-[11px] text-zinc-800 font-medium truncate">CRM 16.043 &bull; 36 Anos de Medicina</p>
+                        <h2 className="font-bold text-[11.5px] text-zinc-950 truncate">Dr. José Antônio Saad</h2>
+                        <p className="text-[10.5px] text-zinc-800 font-medium truncate">CRM 16.043 &bull; 36 Anos de Medicina</p>
                       </div>
                     </div>
-                    <span className="text-[10px] font-extrabold uppercase bg-blue-100 text-blue-950 border border-blue-300 px-2.5 py-1 rounded-full shrink-0 ml-auto sm:ml-0 whitespace-nowrap">
+                    <span className="text-[9px] font-extrabold uppercase bg-blue-100 text-blue-950 border border-blue-300 px-2 py-0.5 rounded-full shrink-0 whitespace-nowrap">
                       SOBED
                     </span>
                   </div>
