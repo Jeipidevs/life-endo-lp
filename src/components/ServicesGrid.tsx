@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
 export const ServicesGrid = () => {
@@ -31,14 +30,6 @@ export const ServicesGrid = () => {
       subtitle: "Exame em cápsula ingerível sem sedação",
       description: "Câmera em formato de pílula ingerida pelo paciente que capta milhares de imagens em alta resolução do intestino delgado sem necessidade de anestesia.",
       features: ["Totalmente indolor e sem anestesia", "Visualização do intestino delgado", "Retorno imediato às atividades"],
-    },
-    {
-      icon3d: "/3d-srv-gastro.webp",
-      badge: "Consultas Médicas",
-      title: "Gastroenterologia Clínica",
-      subtitle: "Acompanhamento especializado do sistema digestivo",
-      description: "Atendimento médico humanizado para tratamento de azia, esofagite de refluxo, gordura no fígado (esteatose), síndrome do intestino irritável e prevenção da saúde gastrointestinal.",
-      features: ["Investigação detalhada de sintomas", "Plano terapêutico personalizado", "Acompanhamento pré e pós-exame"],
     },
     {
       icon3d: "/3d-stat-sedation.webp",
@@ -76,7 +67,7 @@ export const ServicesGrid = () => {
           </p>
         </div>
 
-        {/* Cards Biofarma Style com Ícones 3D Luxo Transparentes (Sem Caixas de Fundo) */}
+        {/* Cards Biofarma Style com Ícones 3D Luxo Transparentes */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((srv, idx) => (
             <div
