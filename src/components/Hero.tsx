@@ -116,8 +116,14 @@ export const Hero = () => {
                 <div className="mt-3.5 space-y-2">
                   <div className="bg-white p-3.5 rounded-2xl border border-zinc-200 flex items-center justify-between shadow-2xs">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-xl bg-[#0B2C4D] text-white flex items-center justify-center font-bold text-xs shrink-0">
-                        IZ
+                      <div className="w-10 h-10 rounded-xl overflow-hidden shadow-xs border border-zinc-200 shrink-0 bg-zinc-100">
+                        <img
+                          src="/dr-idilio-zamin.webp"
+                          alt="Dr. Idílio Zamin Júnior"
+                          width={40}
+                          height={40}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                       <div>
                         <h2 className="font-bold text-xs text-zinc-950">Dr. Idílio Zamin Júnior</h2>
@@ -131,8 +137,14 @@ export const Hero = () => {
 
                   <div className="bg-white p-3.5 rounded-2xl border border-zinc-200 flex items-center justify-between shadow-2xs">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-xl bg-[#C5A059] text-zinc-950 flex items-center justify-center font-bold text-xs shrink-0">
-                        JS
+                      <div className="w-10 h-10 rounded-xl overflow-hidden shadow-xs border border-zinc-200 shrink-0 bg-zinc-100">
+                        <img
+                          src="/dr-jose-antonio.webp"
+                          alt="Dr. José Antônio Saad"
+                          width={40}
+                          height={40}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                       <div>
                         <h2 className="font-bold text-xs text-zinc-950">Dr. José Antônio Saad</h2>
