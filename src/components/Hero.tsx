@@ -64,7 +64,7 @@ export const Hero = () => {
             {/* Prova Social Google Badge com Ícone 3D Luxo Transparente Sem Fundo */}
             <div className="pt-6 border-t border-zinc-200 flex items-center gap-4">
               <div className="w-12 h-12 flex items-center justify-center shrink-0">
-                <img src="/3d-stat-google.webp" alt="Selo 5.0 Google" className="w-full h-full object-contain drop-shadow-xs" />
+                <img src="/3d-stat-google.webp" alt="Selo 5.0 Google" width={48} height={48} className="w-full h-full object-contain drop-shadow-xs" />
               </div>
               <div>
                 <div className="flex items-center gap-1">
@@ -81,7 +81,7 @@ export const Hero = () => {
 
           </div>
 
-          {/* Coluna Direita: Imagem Real da Clínica */}
+          {/* Coluna Direita: Imagem Real da Clínica Otimizada para LCP Super Rápido */}
           <div className="lg:col-span-5">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
@@ -95,8 +95,8 @@ export const Hero = () => {
                     <img
                       src="/hero-clinic.webp"
                       alt="Recepção e Painel da Life Endo Clínica no Hospital Life Plus"
-                      width={800}
-                      height={1000}
+                      width={560}
+                      height={700}
                       // @ts-ignore
                       fetchpriority="high"
                       decoding="sync"

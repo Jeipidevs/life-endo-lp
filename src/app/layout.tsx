@@ -51,6 +51,8 @@ export default function RootLayout({
           as="image"
           type="image/webp"
           media="(max-width: 640px)"
+          // @ts-ignore
+          fetchpriority="high"
         />
         <link
           rel="preload"
@@ -58,6 +60,8 @@ export default function RootLayout({
           as="image"
           type="image/webp"
           media="(min-width: 641px)"
+          // @ts-ignore
+          fetchpriority="high"
         />
       </head>
       <body className="bg-white font-sans text-zinc-950 antialiased selection:bg-[#0B2C4D] selection:text-white overflow-x-hidden w-full max-w-full">
