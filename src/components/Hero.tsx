@@ -12,7 +12,7 @@ export const Hero = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
-          {/* Coluna Esquerda: Texto Focado 100% em Exames (Endoscopia & Colonoscopia) */}
+          {/* Coluna Esquerda: Texto Biofarma Style com Alinhamento Perfeito */}
           <div className="lg:col-span-7 space-y-6">
             
             {/* Pill Tag Institucional */}
@@ -21,17 +21,21 @@ export const Hero = () => {
               <span>Complexo Hospitalar Life Plus &bull; Xangri-lá / RS</span>
             </div>
 
-            {/* H1 Alinhado a Estrategia de Exames sem a palavra Gastroenterologia */}
-            <h1 className="golden-ratio-h1 font-light tracking-tight text-zinc-950 font-sans">
-              Diagnóstico preciso e exames de alta tecnologia em{" "}
-              <span className="font-normal text-[#0B2C4D] border-b-2 border-[#C5A059] pb-0.5 inline-block">
-                Endoscopia & Colonoscopia
-              </span>
-            </h1>
+            {/* H1 Perfeitamente Alinhado com Traço de Destaque Dourado Independente */}
+            <div>
+              <h1 className="golden-ratio-h1 font-light tracking-tight text-zinc-950 font-sans">
+                Diagnóstico preciso e exames de alta tecnologia em{" "}
+                <span className="font-semibold text-[#0B2C4D]">
+                  Endoscopia & Colonoscopia
+                </span>
+              </h1>
+              {/* Barra Dourada Biofarma de Destaque sem Glitch ou Desalinhamento */}
+              <div className="w-24 h-1 bg-[#C5A059] rounded-full mt-4" aria-hidden="true" />
+            </div>
 
-            {/* Subtítulo / Lead Paragraph - High Contrast */}
+            {/* Subtítulo / Lead Paragraph com Correção Factual (30 anos de experiência da equipe médica) */}
             <p className="text-base sm:text-lg text-zinc-800 font-normal leading-relaxed max-w-2xl">
-              Realize sua <strong className="font-bold text-zinc-950">Endoscopia ou Colonoscopia</strong> com tecnologia de ponta, <strong className="font-bold text-zinc-950">sedação consciente 100% sem dor</strong> e o acolhimento de uma equipe especialista com mais de 30 anos de atuação no Hospital Life Plus.
+              Realize sua <strong className="font-bold text-zinc-950">Endoscopia ou Colonoscopia</strong> com tecnologia de ponta, <strong className="font-bold text-zinc-950">sedação consciente 100% sem dor</strong> e o acolhimento de uma <strong className="font-bold text-zinc-950">equipe médica com mais de 30 anos de experiência</strong>, sediada no Hospital Life Plus.
             </p>
 
             {/* Botões CTA Estilo Biofarma (Dot Effect) */}
