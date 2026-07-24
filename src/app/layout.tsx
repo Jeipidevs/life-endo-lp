@@ -44,6 +44,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${interTight.variable} scroll-smooth`}>
+      <head>
+        <link rel="preload" href="/hero-clinic.webp" as="image" type="image/webp" />
+      </head>
       <body className="bg-white font-sans text-zinc-900 antialiased selection:bg-[#0B2C4D] selection:text-white">
         {children}
       </body>
