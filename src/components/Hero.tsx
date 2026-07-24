@@ -7,33 +7,33 @@ export const Hero = () => {
   const whatsappUrl = "https://wa.me/5551994874760?text=Olá!%20Gostaria%20de%20agendar%20um%20exame%20na%20Life%20Endo%20Clínica.";
 
   return (
-    <section id="clinica" className="bg-white text-zinc-950 pt-10 pb-20 overflow-hidden relative">
+    <section id="clinica" className="bg-white text-zinc-950 pt-8 sm:pt-10 pb-20 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
-          {/* Coluna Esquerda: Texto Biofarma Style com Alinhamento Perfeito */}
+          {/* Coluna Esquerda: Texto Biofarma Style com Quebra de Linha Equilibrada em Mobile */}
           <div className="lg:col-span-7 space-y-6">
             
             {/* Pill Tag Institucional */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-100 border border-zinc-300 text-zinc-900 text-xs font-bold">
-              <Building2 className="w-4 h-4 text-[#0B2C4D]" aria-hidden="true" />
-              <span>Complexo Hospitalar Life Plus &bull; Xangri-lá / RS</span>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-100 border border-zinc-300 text-zinc-900 text-xs font-bold max-w-full">
+              <Building2 className="w-4 h-4 text-[#0B2C4D] shrink-0" aria-hidden="true" />
+              <span className="truncate">Complexo Hospitalar Life Plus &bull; Xangri-lá / RS</span>
             </div>
 
-            {/* H1 Perfeitamente Alinhado com Traço de Destaque Dourado Independente */}
-            <div>
-              <h1 className="golden-ratio-h1 font-light tracking-tight text-zinc-950 font-sans">
+            {/* H1 Harmonioso com Quebra de Linha Equilibrada (text-balance) */}
+            <div className="max-w-2xl">
+              <h1 className="golden-ratio-h1 font-light tracking-tight text-zinc-950 font-sans leading-tight text-balance">
                 Diagnóstico preciso e exames de alta tecnologia em{" "}
                 <span className="font-semibold text-[#0B2C4D]">
                   Endoscopia & Colonoscopia
                 </span>
               </h1>
-              {/* Barra Dourada Biofarma de Destaque sem Glitch ou Desalinhamento */}
-              <div className="w-24 h-1 bg-[#C5A059] rounded-full mt-4" aria-hidden="true" />
+              {/* Barra Dourada Biofarma de Destaque Símbolo da Marca */}
+              <div className="w-20 sm:w-24 h-1 bg-[#C5A059] rounded-full mt-4" aria-hidden="true" />
             </div>
 
-            {/* Subtítulo / Lead Paragraph com Correção Factual (30 anos de experiência da equipe médica) */}
+            {/* Subtítulo / Lead Paragraph */}
             <p className="text-base sm:text-lg text-zinc-800 font-normal leading-relaxed max-w-2xl">
               Realize sua <strong className="font-bold text-zinc-950">Endoscopia ou Colonoscopia</strong> com tecnologia de ponta, <strong className="font-bold text-zinc-950">sedação consciente 100% sem dor</strong> e o acolhimento de uma <strong className="font-bold text-zinc-950">equipe médica com mais de 30 anos de experiência</strong>, sediada no Hospital Life Plus.
             </p>
@@ -81,7 +81,7 @@ export const Hero = () => {
 
           </div>
 
-          {/* Coluna Direita: Imagem Real da Clínica com Posicionamento Superior Exibindo a Logo Oficial */}
+          {/* Coluna Direita: Imagem Real da Clínica */}
           <div className="lg:col-span-5">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               

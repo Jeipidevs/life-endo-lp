@@ -26,21 +26,23 @@
   }
 }
 
-/* Biofarma Custom Animations & Golden Ratio Classes */
+/* Biofarma Custom Animations & Golden Ratio Classes com Text-Wrap Balance para Mobile */
 .golden-ratio-h1 {
-  font-size: clamp(2.5rem, 5vw + 1rem, 4.236rem);
-  line-height: 1.08;
-  letter-spacing: -0.035em;
+  font-size: clamp(1.75rem, 3.5vw + 0.8rem, 4.236rem);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
 }
 
 .golden-ratio-h2 {
-  font-size: clamp(1.8rem, 3vw + 0.8rem, 2.618rem);
-  line-height: 1.15;
+  font-size: clamp(1.5rem, 2.5vw + 0.7rem, 2.618rem);
+  line-height: 1.18;
   letter-spacing: -0.025em;
+  text-wrap: balance;
 }
 
 .golden-ratio-h3 {
-  font-size: clamp(1.2rem, 1.5vw + 0.6rem, 1.618rem);
+  font-size: clamp(1.15rem, 1.5vw + 0.5rem, 1.618rem);
   line-height: 1.25;
 }
 
