@@ -45,9 +45,24 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${interTight.variable} scroll-smooth`}>
       <head>
-        <link rel="preload" href="/hero-clinic.webp" as="image" type="image/webp" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preload"
+          href="/hero-clinic-mobile.webp"
+          as="image"
+          type="image/webp"
+          media="(max-width: 640px)"
+        />
+        <link
+          rel="preload"
+          href="/hero-clinic.webp"
+          as="image"
+          type="image/webp"
+          media="(min-width: 641px)"
+        />
       </head>
-      <body className="bg-white font-sans text-zinc-900 antialiased selection:bg-[#0B2C4D] selection:text-white">
+      <body className="bg-white font-sans text-zinc-950 antialiased selection:bg-[#0B2C4D] selection:text-white">
         {children}
       </body>
     </html>

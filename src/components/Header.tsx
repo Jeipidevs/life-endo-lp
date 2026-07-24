@@ -20,20 +20,20 @@ export const Header = () => {
 
   return (
     <>
-      {/* Top Banner de Prova Social & Contato */}
-      <div className="bg-zinc-100/90 text-zinc-800 py-2.5 px-4 sm:px-8 text-xs border-b border-zinc-200/80">
+      {/* Top Banner de Prova Social & Contato - Alto Contraste A11y 100 */}
+      <div className="bg-zinc-100 text-zinc-900 py-2.5 px-4 sm:px-8 text-xs border-b border-zinc-300">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-3">
           <div className="flex items-center gap-2 font-medium">
-            <span className="inline-flex items-center gap-1.5 text-amber-800 font-bold bg-amber-50/90 border border-amber-300 px-3 py-0.5 rounded-full shadow-2xs">
+            <span className="inline-flex items-center gap-1.5 text-amber-950 font-bold bg-amber-100 border border-amber-400 px-3 py-0.5 rounded-full shadow-2xs">
               <Star className="w-3.5 h-3.5 fill-amber-600 text-amber-600" aria-hidden="true" />
               5.0 ★★★★★ no Google (277 Avaliações)
             </span>
             <span className="hidden md:inline text-zinc-600" aria-hidden="true">•</span>
-            <span className="hidden md:inline text-zinc-800 font-medium">
+            <span className="hidden md:inline text-zinc-900 font-semibold">
               Hospital Life Plus - 2º Andar, Sala 209 (Xangri-lá / RS)
             </span>
           </div>
-          <div className="flex items-center gap-5 font-semibold text-zinc-800 text-[11.5px]">
+          <div className="flex items-center gap-5 font-bold text-zinc-900 text-[11.5px]">
             <a href="tel:5120500202" className="hover:text-zinc-950 transition-colors hidden sm:inline" aria-label="Telefone Fixo (51) 2050-0202">
               Fixo: (51) 2050-0202
             </a>
@@ -41,7 +41,7 @@ export const Header = () => {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#0B2C4D] font-bold hover:underline flex items-center gap-1.5"
+              className="text-[#0B2C4D] font-extrabold hover:underline flex items-center gap-1.5"
               aria-label="Atendimento via WhatsApp (51) 99487-4760"
             >
               <Phone className="w-3.5 h-3.5 text-[#0B2C4D]" aria-hidden="true" /> (51) 99487-4760
@@ -73,7 +73,7 @@ export const Header = () => {
           </a>
 
           {/* Nav Links Desktop */}
-          <nav className="hidden lg:flex items-center gap-8 text-sm font-semibold text-zinc-800" aria-label="Menu de Navegação Principal">
+          <nav className="hidden lg:flex items-center gap-8 text-sm font-bold text-zinc-900" aria-label="Menu de Navegação Principal">
             <a href="#clinica" className="hover:text-[#0B2C4D] transition-colors py-2">
               A Clínica
             </a>
@@ -111,7 +111,7 @@ export const Header = () => {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden text-zinc-800 hover:text-zinc-950 p-2.5 rounded-2xl bg-zinc-100 border border-zinc-200"
+            className="lg:hidden text-zinc-900 hover:text-zinc-950 p-2.5 rounded-2xl bg-zinc-100 border border-zinc-300"
             aria-label={mobileMenuOpen ? "Fechar Menu de Navegação" : "Abrir Menu de Navegação"}
             aria-expanded={mobileMenuOpen}
           >
@@ -127,7 +127,7 @@ export const Header = () => {
             exit={{ opacity: 0, y: -10 }}
             className="lg:hidden bg-white border-b border-zinc-200 px-6 pt-4 pb-6 mt-3 space-y-4 shadow-xl"
           >
-            <nav className="flex flex-col space-y-3 font-semibold text-zinc-800 text-sm" aria-label="Menu Mobile">
+            <nav className="flex flex-col space-y-3 font-bold text-zinc-900 text-sm" aria-label="Menu Mobile">
               <a
                 href="#clinica"
                 onClick={() => setMobileMenuOpen(false)}

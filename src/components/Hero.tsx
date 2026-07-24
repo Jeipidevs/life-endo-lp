@@ -8,12 +8,12 @@ export const Hero = () => {
   const whatsappUrl = "https://wa.me/5551994874760?text=Olá!%20Gostaria%20de%20agendar%20um%20exame/consulta%20na%20Life%20Endo%20Clínica.";
 
   return (
-    <section id="clinica" className="bg-white text-zinc-900 pt-12 pb-24 overflow-hidden relative">
+    <section id="clinica" className="bg-white text-zinc-950 pt-12 pb-24 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           
-          {/* Coluna Esquerda: Texto Biofarma Style (Golden Ratio Typography) */}
+          {/* Coluna Esquerda: Texto Biofarma Style (Golden Ratio Typography + High Contrast A11y) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -21,33 +21,33 @@ export const Hero = () => {
             className="lg:col-span-7 space-y-6"
           >
             {/* Pill Tag Institucional */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-100/90 border border-zinc-200 text-zinc-800 text-xs font-semibold">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-100 border border-zinc-300 text-zinc-900 text-xs font-bold">
               <Building2 className="w-4 h-4 text-[#0B2C4D]" aria-hidden="true" />
               <span>Complexo Hospitalar Life Plus &bull; Xangri-lá / RS</span>
             </div>
 
             {/* H1 biofarma-style: Thin font weight, Golden Ratio scaling */}
-            <h1 className="golden-ratio-h1 font-light tracking-tight text-slate-900 font-sans">
+            <h1 className="golden-ratio-h1 font-light tracking-tight text-zinc-950 font-sans">
               Diagnóstico preciso e tratamento avançado em{" "}
-              <span className="font-normal text-[#0B2C4D] underline decoration-[#C5A059]/40 underline-offset-8">
+              <span className="font-normal text-[#0B2C4D] underline decoration-[#C5A059] underline-offset-8">
                 Gastroenterologia & Endoscopia
               </span>
             </h1>
 
-            {/* Subtítulo / Lead Paragraph */}
-            <p className="text-base sm:text-lg text-zinc-600 font-light leading-relaxed max-w-2xl">
-              Realize sua <strong className="font-medium text-zinc-900">Endoscopia ou Colonoscopia</strong> com tecnologia de ponta, <strong className="font-medium text-zinc-900">sedação consciente 100% sem dor</strong> e o acolhimento de uma equipe especialista com mais de 30 anos de atuação.
+            {/* Subtítulo / Lead Paragraph - High Contrast */}
+            <p className="text-base sm:text-lg text-zinc-800 font-normal leading-relaxed max-w-2xl">
+              Realize sua <strong className="font-bold text-zinc-950">Endoscopia ou Colonoscopia</strong> com tecnologia de ponta, <strong className="font-bold text-zinc-950">sedação consciente 100% sem dor</strong> e o acolhimento de uma equipe especialista com mais de 30 anos de atuação.
             </p>
 
             {/* Micro badges clean */}
-            <div className="flex flex-wrap items-center gap-3 text-xs text-zinc-600 py-1">
-              <div className="flex items-center gap-2 bg-zinc-50 border border-zinc-200 px-4 py-1.5 rounded-full">
+            <div className="flex flex-wrap items-center gap-3 text-xs text-zinc-900 py-1">
+              <div className="flex items-center gap-2 bg-zinc-100 border border-zinc-300 px-4 py-1.5 rounded-full font-semibold">
                 <Check className="w-4 h-4 text-[#0B2C4D]" aria-hidden="true" />
-                <span className="font-medium">Exames 100% Humanizados</span>
+                <span>Exames 100% Humanizados</span>
               </div>
-              <div className="flex items-center gap-2 bg-zinc-50 border border-zinc-200 px-4 py-1.5 rounded-full">
+              <div className="flex items-center gap-2 bg-zinc-100 border border-zinc-300 px-4 py-1.5 rounded-full font-semibold">
                 <ShieldCheck className="w-4 h-4 text-[#0B2C4D]" aria-hidden="true" />
-                <span className="font-medium">Segurança Hospitalar Integrada</span>
+                <span>Segurança Hospitalar Integrada</span>
               </div>
             </div>
 
@@ -66,7 +66,7 @@ export const Hero = () => {
 
               <a
                 href="#especialidades"
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-xs font-semibold uppercase tracking-wider text-zinc-700 hover:text-zinc-900 bg-zinc-100 hover:bg-zinc-200/80 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-xs font-bold uppercase tracking-wider text-zinc-900 bg-zinc-100 hover:bg-zinc-200 border border-zinc-300 transition-colors"
                 aria-label="Conhecer Especialidades e Exames"
               >
                 <span>Conhecer Especialidades</span>
@@ -75,7 +75,7 @@ export const Hero = () => {
             </div>
 
             {/* Prova Social Google Badge */}
-            <div className="pt-6 border-t border-zinc-200/80 flex items-center gap-4">
+            <div className="pt-6 border-t border-zinc-200 flex items-center gap-4">
               <div className="flex -space-x-2">
                 <div className="w-9 h-9 rounded-full bg-[#0B2C4D] text-white font-bold text-xs flex items-center justify-center border-2 border-white shadow-sm">
                   IZ
@@ -90,19 +90,19 @@ export const Hero = () => {
               <div>
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" aria-hidden="true" />
+                    <Star key={i} className="w-4 h-4 fill-amber-600 text-amber-600" aria-hidden="true" />
                   ))}
-                  <span className="font-bold text-zinc-900 text-sm ml-1">5.0 / 5.0</span>
+                  <span className="font-bold text-zinc-950 text-sm ml-1">5.0 / 5.0</span>
                 </div>
-                <p className="text-xs text-zinc-500 font-light">
-                  <strong className="font-semibold text-zinc-800">277 avaliações reais</strong> de pacientes no Google Meu Negócio
+                <p className="text-xs text-zinc-800 font-medium">
+                  <strong className="font-bold text-zinc-950">277 avaliações reais</strong> de pacientes no Google Meu Negócio
                 </p>
               </div>
             </div>
 
           </motion.div>
 
-          {/* Coluna Direita: Imagem LCP Otimizada em WebP com Dimensions e Priority */}
+          {/* Coluna Direita: Imagem LCP Responsiva com <picture> (22KB Mobile) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -111,29 +111,32 @@ export const Hero = () => {
           >
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
-              {/* Rounded Frame Biofarma Style: rounded-[2.618rem] */}
-              <div className="rounded-[2.618rem] bg-zinc-50 border border-zinc-200/90 p-3.5 shadow-xl relative overflow-hidden group">
+              {/* Frame Biofarma Style: rounded-[2.618rem] */}
+              <div className="rounded-[2.618rem] bg-zinc-50 border border-zinc-200 p-3.5 shadow-xl relative overflow-hidden group">
                 
-                {/* Imagem LCP Otimizada WebP */}
+                {/* Responsive <picture> for Ultra-Fast LCP on Mobile */}
                 <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] bg-zinc-200">
-                  <img
-                    src="/hero-clinic.webp"
-                    alt="Centro de Diagnóstico e Endoscopia Avançada na Life Endo Clínica"
-                    width={600}
-                    height={450}
-                    // @ts-ignore
-                    fetchpriority="high"
-                    decoding="sync"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
+                  <picture>
+                    <source media="(max-width: 640px)" srcSet="/hero-clinic-mobile.webp" type="image/webp" />
+                    <img
+                      src="/hero-clinic.webp"
+                      alt="Centro de Diagnóstico e Endoscopia Avançada na Life Endo Clínica"
+                      width={600}
+                      height={450}
+                      // @ts-ignore
+                      fetchpriority="high"
+                      decoding="sync"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </picture>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/25 to-transparent" />
                   
                   {/* Badge Interno sobre a Imagem */}
-                  <div className="absolute bottom-4 left-4 right-4 text-white p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20">
+                  <div className="absolute bottom-4 left-4 right-4 text-white p-4 rounded-2xl bg-slate-950/40 backdrop-blur-md border border-white/20">
                     <p className="text-xs font-bold uppercase tracking-wider text-[#C5A059]">
                       Centro Diagnóstico Integrado
                     </p>
-                    <p className="text-xs text-zinc-200 font-light mt-0.5">
+                    <p className="text-xs text-zinc-100 font-medium mt-0.5">
                       Equipamentos HD de Magnificação & Anestesia Assistida
                     </p>
                   </div>
@@ -141,32 +144,32 @@ export const Hero = () => {
 
                 {/* Cards Médicos Fundadores */}
                 <div className="mt-3.5 space-y-2">
-                  <div className="bg-white p-3.5 rounded-2xl border border-zinc-200/80 flex items-center justify-between shadow-2xs">
+                  <div className="bg-white p-3.5 rounded-2xl border border-zinc-200 flex items-center justify-between shadow-2xs">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-xl bg-[#0B2C4D] text-white flex items-center justify-center font-bold text-xs shrink-0">
                         IZ
                       </div>
                       <div>
-                        <h2 className="font-bold text-xs text-zinc-900">Dr. Idílio Zamin Júnior</h2>
-                        <p className="text-[11px] text-zinc-500 font-light">CRM 19.623 &bull; Mestre e Doutor UFRGS</p>
+                        <h2 className="font-bold text-xs text-zinc-950">Dr. Idílio Zamin Júnior</h2>
+                        <p className="text-[11px] text-zinc-800 font-medium">CRM 19.623 &bull; Mestre e Doutor UFRGS</p>
                       </div>
                     </div>
-                    <span className="text-[10px] font-bold uppercase bg-amber-50 text-amber-800 border border-amber-200 px-2.5 py-0.5 rounded-full">
+                    <span className="text-[10px] font-extrabold uppercase bg-amber-100 text-amber-950 border border-amber-300 px-2.5 py-0.5 rounded-full">
                       SOBED & SBG
                     </span>
                   </div>
 
-                  <div className="bg-white p-3.5 rounded-2xl border border-zinc-200/80 flex items-center justify-between shadow-2xs">
+                  <div className="bg-white p-3.5 rounded-2xl border border-zinc-200 flex items-center justify-between shadow-2xs">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-xl bg-[#C5A059] text-zinc-950 flex items-center justify-center font-bold text-xs shrink-0">
                         JS
                       </div>
                       <div>
-                        <h2 className="font-bold text-xs text-zinc-900">Dr. José Antônio Saad</h2>
-                        <p className="text-[11px] text-zinc-500 font-light">CRM 16.043 &bull; 36 Anos de Medicina</p>
+                        <h2 className="font-bold text-xs text-zinc-950">Dr. José Antônio Saad</h2>
+                        <p className="text-[11px] text-zinc-800 font-medium">CRM 16.043 &bull; 36 Anos de Medicina</p>
                       </div>
                     </div>
-                    <span className="text-[10px] font-bold uppercase bg-blue-50 text-blue-800 border border-blue-200 px-2.5 py-0.5 rounded-full">
+                    <span className="text-[10px] font-extrabold uppercase bg-blue-100 text-blue-950 border border-blue-300 px-2.5 py-0.5 rounded-full">
                       SOBED
                     </span>
                   </div>
