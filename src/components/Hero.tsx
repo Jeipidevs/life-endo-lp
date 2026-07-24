@@ -57,10 +57,10 @@ export const Hero = () => {
               </a>
             </div>
 
-            {/* Prova Social Google Badge com Ícone 3D Luxo */}
+            {/* Prova Social Google Badge com Ícone 3D Luxo Transparente Sem Fundo */}
             <div className="pt-6 border-t border-zinc-200 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-amber-50 border border-amber-200 p-1 flex items-center justify-center shrink-0 shadow-2xs">
-                <img src="/3d-stat-google.webp" alt="Selo 5.0 Google" className="w-full h-full object-contain" />
+              <div className="w-12 h-12 flex items-center justify-center shrink-0">
+                <img src="/3d-stat-google.webp" alt="Selo 5.0 Google" className="w-full h-full object-contain drop-shadow-xs" />
               </div>
               <div>
                 <div className="flex items-center gap-1">
