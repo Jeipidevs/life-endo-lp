@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Star, ShieldCheck, Check, ArrowUpRight, Building2 } from "lucide-react";
+import { Star, ArrowUpRight, Building2 } from "lucide-react";
 
 export const Hero = () => {
   const whatsappUrl = "https://wa.me/5551994874760?text=Olá!%20Gostaria%20de%20agendar%20um%20exame/consulta%20na%20Life%20Endo%20Clínica.";
@@ -12,7 +12,7 @@ export const Hero = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
-          {/* Coluna Esquerda: Texto Renderizado Imediatamente sem delay de Opacidade (LCP Ultra-Rápido < 1s) */}
+          {/* Coluna Esquerda: Texto Biofarma Style (Sem os botões de badges removidos) */}
           <div className="lg:col-span-7 space-y-6">
             
             {/* Pill Tag Institucional */}
@@ -21,7 +21,7 @@ export const Hero = () => {
               <span>Complexo Hospitalar Life Plus &bull; Xangri-lá / RS</span>
             </div>
 
-            {/* H1 Elemento LCP - Renderizacao Instantanea sem Opacidade Categoria 0 */}
+            {/* H1 Elemento LCP - Renderização Instantânea sem Opacidade 0 */}
             <h1 className="golden-ratio-h1 font-light tracking-tight text-zinc-950 font-sans">
               Diagnóstico preciso e tratamento avançado em{" "}
               <span className="font-normal text-[#0B2C4D] underline decoration-[#C5A059] underline-offset-8">
@@ -33,18 +33,6 @@ export const Hero = () => {
             <p className="text-base sm:text-lg text-zinc-800 font-normal leading-relaxed max-w-2xl">
               Realize sua <strong className="font-bold text-zinc-950">Endoscopia ou Colonoscopia</strong> com tecnologia de ponta, <strong className="font-bold text-zinc-950">sedação consciente 100% sem dor</strong> e o acolhimento de uma equipe especialista com mais de 30 anos de atuação.
             </p>
-
-            {/* Micro badges clean */}
-            <div className="flex flex-wrap items-center gap-3 text-xs text-zinc-900 py-1">
-              <div className="flex items-center gap-2 bg-zinc-100 border border-zinc-300 px-4 py-1.5 rounded-full font-semibold">
-                <Check className="w-4 h-4 text-[#0B2C4D]" aria-hidden="true" />
-                <span>Exames 100% Humanizados</span>
-              </div>
-              <div className="flex items-center gap-2 bg-zinc-100 border border-zinc-300 px-4 py-1.5 rounded-full font-semibold">
-                <ShieldCheck className="w-4 h-4 text-[#0B2C4D]" aria-hidden="true" />
-                <span>Segurança Hospitalar Integrada</span>
-              </div>
-            </div>
 
             {/* Botões CTA Estilo Biofarma (Dot Effect) */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
@@ -69,18 +57,10 @@ export const Hero = () => {
               </a>
             </div>
 
-            {/* Prova Social Google Badge */}
-            <div className="pt-5 border-t border-zinc-200 flex items-center gap-4">
-              <div className="flex -space-x-2">
-                <div className="w-9 h-9 rounded-full bg-[#0B2C4D] text-white font-bold text-xs flex items-center justify-center border-2 border-white shadow-sm">
-                  IZ
-                </div>
-                <div className="w-9 h-9 rounded-full bg-[#C5A059] text-zinc-950 font-bold text-xs flex items-center justify-center border-2 border-white shadow-sm">
-                  JS
-                </div>
-                <div className="w-9 h-9 rounded-full bg-emerald-600 text-white font-bold text-xs flex items-center justify-center border-2 border-white shadow-sm">
-                  ★
-                </div>
+            {/* Prova Social Google Badge com Ícone 3D Luxo */}
+            <div className="pt-6 border-t border-zinc-200 flex items-center gap-4">
+              <div className="w-12 h-12 rounded-2xl bg-amber-50 border border-amber-200 p-1 flex items-center justify-center shrink-0 shadow-2xs">
+                <img src="/3d-stat-google.webp" alt="Selo 5.0 Google" className="w-full h-full object-contain" />
               </div>
               <div>
                 <div className="flex items-center gap-1">
