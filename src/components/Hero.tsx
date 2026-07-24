@@ -21,10 +21,10 @@ export const Hero = () => {
               <span>Complexo Hospitalar Life Plus &bull; Xangri-lá / RS</span>
             </div>
 
-            {/* H1 Elemento LCP - Renderização Instantânea */}
+            {/* H1 Elemento LCP - Sublinhado com Borda Firme sem Bug no 'g' */}
             <h1 className="golden-ratio-h1 font-light tracking-tight text-zinc-950 font-sans">
               Diagnóstico preciso e tratamento avançado em{" "}
-              <span className="font-normal text-[#0B2C4D] underline decoration-[#C5A059] underline-offset-8">
+              <span className="font-normal text-[#0B2C4D] border-b-2 border-[#C5A059] pb-0.5 inline-block">
                 Gastroenterologia & Endoscopia
               </span>
             </h1>
@@ -101,10 +101,11 @@ export const Hero = () => {
                   </picture>
                 </div>
 
-                {/* Cards Médicos Fundadores */}
+                {/* Cards Médicos Fundadores com Alinhamento Perfeito em Telas Mobile */}
                 <div className="mt-3.5 space-y-2">
-                  <div className="bg-white p-3.5 rounded-2xl border border-zinc-200 flex items-center justify-between shadow-2xs">
-                    <div className="flex items-center gap-3">
+                  
+                  <div className="bg-white p-3 sm:p-3.5 rounded-2xl border border-zinc-200 flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 shadow-2xs">
+                    <div className="flex items-center gap-3 min-w-0">
                       <div className="w-10 h-10 rounded-xl overflow-hidden shadow-xs border border-zinc-200 shrink-0 bg-zinc-100">
                         <img
                           src="/dr-idilio-zamin.webp"
@@ -114,18 +115,18 @@ export const Hero = () => {
                           className="w-full h-full object-cover"
                         />
                       </div>
-                      <div>
-                        <h2 className="font-bold text-xs text-zinc-950">Dr. Idílio Zamin Júnior</h2>
-                        <p className="text-[11px] text-zinc-800 font-medium">CRM 19.623 &bull; Mestre e Doutor UFRGS</p>
+                      <div className="min-w-0">
+                        <h2 className="font-bold text-xs text-zinc-950 truncate">Dr. Idílio Zamin Júnior</h2>
+                        <p className="text-[11px] text-zinc-800 font-medium truncate">CRM 19.623 &bull; Mestre e Doutor UFRGS</p>
                       </div>
                     </div>
-                    <span className="text-[10px] font-extrabold uppercase bg-amber-100 text-amber-950 border border-amber-300 px-2.5 py-0.5 rounded-full">
+                    <span className="text-[10px] font-extrabold uppercase bg-amber-100 text-amber-950 border border-amber-300 px-2.5 py-1 rounded-full shrink-0 ml-auto sm:ml-0 whitespace-nowrap">
                       SOBED & SBG
                     </span>
                   </div>
 
-                  <div className="bg-white p-3.5 rounded-2xl border border-zinc-200 flex items-center justify-between shadow-2xs">
-                    <div className="flex items-center gap-3">
+                  <div className="bg-white p-3 sm:p-3.5 rounded-2xl border border-zinc-200 flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 shadow-2xs">
+                    <div className="flex items-center gap-3 min-w-0">
                       <div className="w-10 h-10 rounded-xl overflow-hidden shadow-xs border border-zinc-200 shrink-0 bg-zinc-100">
                         <img
                           src="/dr-jose-antonio.webp"
@@ -135,15 +136,16 @@ export const Hero = () => {
                           className="w-full h-full object-cover"
                         />
                       </div>
-                      <div>
-                        <h2 className="font-bold text-xs text-zinc-950">Dr. José Antônio Saad</h2>
-                        <p className="text-[11px] text-zinc-800 font-medium">CRM 16.043 &bull; 36 Anos de Medicina</p>
+                      <div className="min-w-0">
+                        <h2 className="font-bold text-xs text-zinc-950 truncate">Dr. José Antônio Saad</h2>
+                        <p className="text-[11px] text-zinc-800 font-medium truncate">CRM 16.043 &bull; 36 Anos de Medicina</p>
                       </div>
                     </div>
-                    <span className="text-[10px] font-extrabold uppercase bg-blue-100 text-blue-950 border border-blue-300 px-2.5 py-0.5 rounded-full">
+                    <span className="text-[10px] font-extrabold uppercase bg-blue-100 text-blue-950 border border-blue-300 px-2.5 py-1 rounded-full shrink-0 ml-auto sm:ml-0 whitespace-nowrap">
                       SOBED
                     </span>
                   </div>
+
                 </div>
 
               </div>

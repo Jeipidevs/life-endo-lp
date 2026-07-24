@@ -16,7 +16,7 @@ export const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const whatsappUrl = "https://wa.me/5551994874760?text=Olá!%20Vim%20pelo%20site%20da%20Life%20Endo%20Clínica%20e%20gostaria%20de%20agendar%20uma%20consulta/exame.";
+  const whatsappUrl = "https://wa.me/5551994874760?text=Olá!%20Vim%20pelo%20site%20da%20Life%20Endo%20Clínica%20e%20gostaria%20de%20agendar%20um%20exame.";
 
   return (
     <>
@@ -94,16 +94,16 @@ export const Header = () => {
             </a>
           </nav>
 
-          {/* Botão Biofarma Dot Effect */}
+          {/* Botão Biofarma Dot Effect Atualizado para "AGENDAR EXAME" */}
           <div className="hidden sm:flex items-center">
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="biofarma-btn-dot"
-              aria-label="Agendar Consulta ou Exame via WhatsApp"
+              aria-label="Agendar Exame via WhatsApp"
             >
-              <span className="btn-text">Agendar Consulta / Exame</span>
+              <span className="btn-text">AGENDAR EXAME</span>
               <span className="btn-dot" aria-hidden="true" />
             </a>
           </div>
@@ -176,11 +176,11 @@ export const Header = () => {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#0B2C4D] text-white font-semibold text-xs uppercase tracking-wider text-center shadow-md"
-              aria-label="Agendar no WhatsApp"
+              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#0B2C4D] text-white font-bold text-xs uppercase tracking-wider text-center shadow-md"
+              aria-label="Agendar Exame no WhatsApp"
             >
               <Calendar className="w-4 h-4 text-[#C5A059]" aria-hidden="true" />
-              <span>Agendar no WhatsApp</span>
+              <span>AGENDAR EXAME</span>
             </a>
           </motion.div>
         )}
