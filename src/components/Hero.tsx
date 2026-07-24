@@ -12,7 +12,7 @@ export const Hero = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
-          {/* Coluna Esquerda: Texto Biofarma Style (Sem os botões de badges removidos) */}
+          {/* Coluna Esquerda: Texto Biofarma Style */}
           <div className="lg:col-span-7 space-y-6">
             
             {/* Pill Tag Institucional */}
@@ -21,7 +21,7 @@ export const Hero = () => {
               <span>Complexo Hospitalar Life Plus &bull; Xangri-lá / RS</span>
             </div>
 
-            {/* H1 Elemento LCP - Renderização Instantânea sem Opacidade 0 */}
+            {/* H1 Elemento LCP - Renderização Instantânea */}
             <h1 className="golden-ratio-h1 font-light tracking-tight text-zinc-950 font-sans">
               Diagnóstico preciso e tratamento avançado em{" "}
               <span className="font-normal text-[#0B2C4D] underline decoration-[#C5A059] underline-offset-8">
@@ -77,39 +77,28 @@ export const Hero = () => {
 
           </div>
 
-          {/* Coluna Direita: Imagem Responsiva com <picture> */}
+          {/* Coluna Direita: Imagem Real da Clínica com Posicionamento Superior Exibindo a Logo Oficial */}
           <div className="lg:col-span-5">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
               {/* Frame Biofarma Style: rounded-[2.618rem] */}
               <div className="rounded-[2.618rem] bg-zinc-50 border border-zinc-200 p-3.5 shadow-xl relative overflow-hidden group">
                 
-                {/* Responsive <picture> for Ultra-Fast LCP on Mobile */}
-                <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] bg-zinc-200">
+                {/* Responsive <picture> com object-top para exibir a logo do painel da clínica */}
+                <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] sm:aspect-[4/4] bg-zinc-100">
                   <picture>
                     <source media="(max-width: 640px)" srcSet="/hero-clinic-mobile.webp" type="image/webp" />
                     <img
                       src="/hero-clinic.webp"
-                      alt="Centro de Diagnóstico e Endoscopia Avançada na Life Endo Clínica"
-                      width={600}
-                      height={450}
+                      alt="Recepção e Painel da Life Endo Clínica no Hospital Life Plus"
+                      width={800}
+                      height={1000}
                       // @ts-ignore
                       fetchpriority="high"
                       decoding="sync"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                     />
                   </picture>
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/25 to-transparent" />
-                  
-                  {/* Badge Interno sobre a Imagem */}
-                  <div className="absolute bottom-4 left-4 right-4 text-white p-4 rounded-2xl bg-slate-950/40 backdrop-blur-md border border-white/20">
-                    <p className="text-xs font-bold uppercase tracking-wider text-[#C5A059]">
-                      Centro Diagnóstico Integrado
-                    </p>
-                    <p className="text-xs text-zinc-100 font-medium mt-0.5">
-                      Equipamentos HD de Magnificação & Anestesia Assistida
-                    </p>
-                  </div>
                 </div>
 
                 {/* Cards Médicos Fundadores */}
