@@ -4,7 +4,7 @@ import React from "react";
 import { Star, ArrowUpRight, Building2 } from "lucide-react";
 
 export const Hero = () => {
-  const whatsappUrl = "https://wa.me/5551994874760?text=Olá!%20Gostaria%20de%20agendar%20um%20exame/consulta%20na%20Life%20Endo%20Clínica.";
+  const whatsappUrl = "https://wa.me/5551994874760?text=Olá!%20Gostaria%20de%20agendar%20um%20exame%20na%20Life%20Endo%20Clínica.";
 
   return (
     <section id="clinica" className="bg-white text-zinc-950 pt-10 pb-20 overflow-hidden relative">
@@ -12,7 +12,7 @@ export const Hero = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
-          {/* Coluna Esquerda: Texto Biofarma Style */}
+          {/* Coluna Esquerda: Texto Focado 100% em Exames (Endoscopia & Colonoscopia) */}
           <div className="lg:col-span-7 space-y-6">
             
             {/* Pill Tag Institucional */}
@@ -21,17 +21,17 @@ export const Hero = () => {
               <span>Complexo Hospitalar Life Plus &bull; Xangri-lá / RS</span>
             </div>
 
-            {/* H1 Elemento LCP - Sublinhado com Borda Firme sem Bug no 'g' */}
+            {/* H1 Alinhado a Estrategia de Exames sem a palavra Gastroenterologia */}
             <h1 className="golden-ratio-h1 font-light tracking-tight text-zinc-950 font-sans">
-              Diagnóstico preciso e tratamento avançado em{" "}
+              Diagnóstico preciso e exames de alta tecnologia em{" "}
               <span className="font-normal text-[#0B2C4D] border-b-2 border-[#C5A059] pb-0.5 inline-block">
-                Gastroenterologia & Endoscopia
+                Endoscopia & Colonoscopia
               </span>
             </h1>
 
             {/* Subtítulo / Lead Paragraph - High Contrast */}
             <p className="text-base sm:text-lg text-zinc-800 font-normal leading-relaxed max-w-2xl">
-              Realize sua <strong className="font-bold text-zinc-950">Endoscopia ou Colonoscopia</strong> com tecnologia de ponta, <strong className="font-bold text-zinc-950">sedação consciente 100% sem dor</strong> e o acolhimento de uma equipe especialista com mais de 30 anos de atuação.
+              Realize sua <strong className="font-bold text-zinc-950">Endoscopia ou Colonoscopia</strong> com tecnologia de ponta, <strong className="font-bold text-zinc-950">sedação consciente 100% sem dor</strong> e o acolhimento de uma equipe especialista com mais de 30 anos de atuação no Hospital Life Plus.
             </p>
 
             {/* Botões CTA Estilo Biofarma (Dot Effect) */}
@@ -43,16 +43,16 @@ export const Hero = () => {
                 className="biofarma-btn-dot"
                 aria-label="Falar com Atendimento e Agendar Exame no WhatsApp"
               >
-                <span className="btn-text">Falar com Atendimento / Agendar Exame</span>
+                <span className="btn-text">Agendar Exame no WhatsApp</span>
                 <span className="btn-dot" aria-hidden="true" />
               </a>
 
               <a
                 href="#especialidades"
                 className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-xs font-bold uppercase tracking-wider text-zinc-900 bg-zinc-100 hover:bg-zinc-200 border border-zinc-300 transition-colors"
-                aria-label="Conhecer Especialidades e Exames"
+                aria-label="Conhecer Exames Realizados"
               >
-                <span>Conhecer Especialidades</span>
+                <span>Conhecer Exames</span>
                 <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
               </a>
             </div>
@@ -101,7 +101,7 @@ export const Hero = () => {
                   </picture>
                 </div>
 
-                {/* Cards Médicos Fundadores com Alinhamento 100% Simétrico sem Quebra de Linha */}
+                {/* Cards Médicos Fundadores */}
                 <div className="mt-3.5 space-y-2">
                   
                   <div className="bg-white p-3 rounded-2xl border border-zinc-200 flex items-center justify-between gap-2 shadow-2xs">
